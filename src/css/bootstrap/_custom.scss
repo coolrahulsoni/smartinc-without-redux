@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+
+
+
+
+
+/* btTable Custom Script */
+
+.main-content{
+    position: relative;
+    min-height:100vh;
+}
+.btTable{ 
+    font-weight: 400;
+    color:$themeGray !important;
+   
+    .tableHead{  
+        .tablehRow{     
+            display: flex;
+            align-items: center;
+        div:nth-of-type(6),
+        div:nth-child(2){
+            color:$primary
+        }
+        div{
+            font-size: 12px;
+            font-weight:500;
+        }     
+      }     
+    }
+    .tableBody{  
+        .tablebRow{
+                display: flex;
+                align-items: center;   
+                margin-top:15px;
+                margin-bottom:15px;
+                padding-top:12px;
+                padding-bottom:12px;
+                box-shadow: $box-shadow-tableRow;
+                transition: all 0.3s linear;
+            div{         
+            font-size:12px;
+            text-align: left;
+            }
+            div:nth-child(2) span{
+                font-size:14px;
+                font-weight: 500;
+                color:$themeDarkGray;
+                cursor: pointer;  
+            }
+            div:nth-child(6){              
+                cursor: pointer;  
+            }
+           .editIcon{      
+                color:$primary;
+                width:20px;               
+            }
+
+        }
+        .tablebRow:hover{
+            width:103%;
+            margin-top:16px;
+            margin-bottom:16px;
+            margin-left:-1.5%;
+            box-shadow: $box-shadow;
+            padding-top:15px;
+            padding-bottom:15px;
+            transition: all 0.2s linear;
+        }
+    }
+  
+  }
+
+
+  
+.footer{
+    padding:10px;    
+    position: absolute;
+    bottom:0px;
+    text-align: center;
+    background-color: white;
+    width:100%;   
+    font-size:14px;
+}
+
+
+
+.borderBottom{
+    border-bottom:1px solid $themeGray;
+    transition: all 0.2s linear;
+}
+
+.borderBottom:focus-within{
+    border-bottom:1px solid $primary;
+    transition: all 0.2s linear;
+}
+
+.borderBottom {
+    .searchIcon{
+    width:16px;
+    color:$themeGray;
+    transition: all 0.2s linear;
+    }
+}
+
+.borderBottom:focus-within
+    { 
+    .searchIcon{
+    width:18px;
+    color:$primary;
+    transition: all 0.2s linear;
+    }
+
+}
+
+.col-form-label{
+    font-size:14px;
+}
+
+.ModalForm input{
+    font-size:14px;
+}
+
+.btn-outline-danger,.btn-outline-info{  
+   width:100px;  
+}
+
+
+.btn-outline-danger:before{  
+    content:'Close'; 
+}
+
+.btn-outline-info:before{  
+    content:'Submit'; 
+}
+
+
+.btn-outline-danger:hover:before{  
+     content:url('../../img/times.svg');
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    transition: all 0.5s linear;
+  
+}
+
+
+.btn-outline-info:hover:before{  
+     content:url('../../img/submit1.svg');
+    width: 20px;
+    height: 15px;
+    display: inline-block;
+    transition: all 0.5s linear;
+   
+}
+
+
+.btn:focus{
+    box-shadow: none !important;
+}
+
+
+
+.h-blank{
+    height: calc(100vh - 114px);
+    padding:10px;
+}
+
+
+.h-blank h4{
+    font-size:1.5rem;
+}
+
+
+
+
+
+
+  @media screen and (max-width: 768px){
+    .btTable{  
+        min-width: 700px;
+        overflow-x: auto;
+    }
+
+    .mobView{
+        overflow-x:auto;
+        position: relative;
+    }
+
+
+    .h-blank h4{
+        font-size:1rem;
+    }
+    
+    
+     
+}
